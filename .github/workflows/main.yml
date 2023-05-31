@@ -83,9 +83,9 @@ jobs:
           script: |
             # Выполняет pull образа с DockerHub
             # sudo docker pull <имя-пользователя>/<имя-репозитория>
-            sudo docker pull xaliy/gates
+            sudo docker pull xaliy/gates:v2.11.1989
 
             #остановка всех контейнеров
             sudo docker stop $(sudo docker ps -a -q)
             # sudo docker run --rm -d -p 5000:5000 xaliy/xaliy/gates
-            sudo docker run --rm -d -p 5000:5000 xaliy/gates
+            sudo docker run --rm -d -p 5000:5000 xaliy/gates:v2.11.1989
